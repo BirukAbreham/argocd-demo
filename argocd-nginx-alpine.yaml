@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: demo
+    namespace: default
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests
+    path: nginx-alpine
     repoURL: https://github.com/BirukAbreham/argocd-demo
     targetRevision: HEAD
   syncPolicy: {}
